@@ -39,4 +39,3 @@ let shop2 : Shop= {
 console.log(buyItem(hero1, shop1));
 console.log(buyItem(hero2, shop2));
 
-module.exports = buyItem;
