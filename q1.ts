@@ -1,5 +1,5 @@
 interface Hero {
-  item : string[];
+  items : string[];
   gold : number;
 }
 
@@ -10,14 +10,14 @@ interface Shop {
 
 function buyItem(hero : Hero, shop : Shop) {
   if(hero.gold > shop.price){
-    hero.item.push(shop.item);
+    hero.items.push(shop.item);
     hero.gold -= shop.price;
   }
   return hero;
 }
 
 let hero1: Hero = {
-  item: ["sword", "potion"],
+  items: ["sword", "potion"],
   gold: 50,
 };
 
@@ -27,7 +27,7 @@ let shop1 : Shop = {
 };
 
 let hero2 : Hero = {
-  item: ["sword", "potion"],
+  items: ["sword", "potion"],
   gold: 50,
 };
 
